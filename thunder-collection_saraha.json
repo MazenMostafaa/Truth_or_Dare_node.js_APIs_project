@@ -1,0 +1,157 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "saraha",
+    "dateExported": "2023-10-14T17:46:51.429Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "dd295276-71af-4904-b8c5-c4b3c1adcda4",
+            "name": "user",
+            "containerId": "",
+            "created": "2023-07-12T18:31:33.872Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "9c8726b1-40ef-443f-93d3-135f7bfe05a9",
+            "name": "message",
+            "containerId": "",
+            "created": "2023-07-12T18:31:44.413Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "e1d7a42b-edc6-4971-af91-c01bf1d801fa",
+            "colId": "950d2e65-6af9-422f-81b3-5ee5a3bde22c",
+            "containerId": "dd295276-71af-4904-b8c5-c4b3c1adcda4",
+            "name": "signUp",
+            "url": "http://localhost:3000/saraha/user/signUp",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-12T18:32:01.762Z",
+            "modified": "2023-07-15T17:52:17.180Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userName\":\"hany\",\n  \"email\":\"hany@gmail.com\",\n  \"password\":\"12345\",\n  \"gender\":\"male\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4cc1b6ff-5f4c-4d9d-bd65-99d3c8d9436e",
+            "colId": "950d2e65-6af9-422f-81b3-5ee5a3bde22c",
+            "containerId": "dd295276-71af-4904-b8c5-c4b3c1adcda4",
+            "name": "signIn",
+            "url": "http://localhost:3000/saraha/user/signIn",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-13T00:04:50.337Z",
+            "modified": "2023-07-15T17:52:41.904Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"hany@gmail.com\",\n  \"password\":\"12345\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aa8e1419-3ebb-42bb-a146-08563fdd1dc7",
+            "colId": "950d2e65-6af9-422f-81b3-5ee5a3bde22c",
+            "containerId": "dd295276-71af-4904-b8c5-c4b3c1adcda4",
+            "name": "updateUser",
+            "url": "http://localhost:3000/saraha/user/updateUser",
+            "method": "PATCH",
+            "sortNum": 30000,
+            "created": "2023-07-13T01:08:49.530Z",
+            "modified": "2023-07-15T19:20:54.810Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"hany@gmail.com\",\n  \"userName\":\"hany\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGIyZTI5Nzk5ODg1NWU5Yjg4ODhjNTYiLCJuYW1lIjoiaGFueSIsImVtYWlsIjoiaGFueUBnbWFpbC5jb20iLCJpYXQiOjE2ODk0NDgzNDgsImV4cCI6MTY4OTQ4NDM0OH0.C08q270eslPPEdidYmsdmTFFtnw6x507Gi8V_3WkKvg",
+                "bearerPrefix": "Saraha"
+            },
+            "tests": []
+        },
+        {
+            "_id": "407f3557-7e13-4f58-a1c5-9cf74a162f8b",
+            "colId": "950d2e65-6af9-422f-81b3-5ee5a3bde22c",
+            "containerId": "dd295276-71af-4904-b8c5-c4b3c1adcda4",
+            "name": "getUserData",
+            "url": "http://localhost:3000/saraha/user/getUserData/64af45f1104ee45189d7c98f",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-07-13T02:09:43.354Z",
+            "modified": "2023-07-13T05:00:15.343Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ceadd6a2-fbe1-453b-9229-418193abe4ca",
+            "colId": "950d2e65-6af9-422f-81b3-5ee5a3bde22c",
+            "containerId": "9c8726b1-40ef-443f-93d3-135f7bfe05a9",
+            "name": "sendMsg",
+            "url": "http://localhost:3000/saraha/message/sendMsg",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-07-13T04:26:57.326Z",
+            "modified": "2023-07-15T19:32:11.876Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"content\":\"test\",\n  \"sendTo\":\"64b2e297998855e9b8888c56\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "542d570b-ac18-4fd7-9e27-772be889e651",
+            "colId": "950d2e65-6af9-422f-81b3-5ee5a3bde22c",
+            "containerId": "9c8726b1-40ef-443f-93d3-135f7bfe05a9",
+            "name": "getUserMsgs",
+            "url": "http://localhost:3000/saraha/message/getUserMsgs",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-07-13T17:04:09.333Z",
+            "modified": "2023-07-15T19:29:17.687Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGIyZTI5Nzk5ODg1NWU5Yjg4ODhjNTYiLCJuYW1lIjoiaGFueSIsImVtYWlsIjoiaGFueUBnbWFpbC5jb20iLCJpYXQiOjE2ODk0NDgzNDgsImV4cCI6MTY4OTQ4NDM0OH0.C08q270eslPPEdidYmsdmTFFtnw6x507Gi8V_3WkKvg",
+                "bearerPrefix": "Saraha"
+            },
+            "tests": []
+        },
+        {
+            "_id": "5411ab65-e424-4063-a437-b72c37c97ca0",
+            "colId": "950d2e65-6af9-422f-81b3-5ee5a3bde22c",
+            "containerId": "9c8726b1-40ef-443f-93d3-135f7bfe05a9",
+            "name": "deleteMsg",
+            "url": "http://localhost:3000/saraha/message/deleteMsg/64b2f43b1629d08acdcaa2c7",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-07-13T18:33:02.752Z",
+            "modified": "2023-07-15T19:33:08.104Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGIyZTI5Nzk5ODg1NWU5Yjg4ODhjNTYiLCJuYW1lIjoiaGFueSIsImVtYWlsIjoiaGFueUBnbWFpbC5jb20iLCJpYXQiOjE2ODk0NDgzNDgsImV4cCI6MTY4OTQ4NDM0OH0.C08q270eslPPEdidYmsdmTFFtnw6x507Gi8V_3WkKvg",
+                "bearerPrefix": "Saraha"
+            },
+            "tests": []
+        }
+    ]
+}
